@@ -4,8 +4,15 @@ namespace operatorsExercise
 {
 	class Program
 	{
+		public static void AreaOfCircle(int radius)
+		{
+			
+		}
+
 		static void Main(string[] args)
 		{
+
+
 			int a = 17;
 			int b = 4;
 			int quotent = a / b;
@@ -17,6 +24,13 @@ namespace operatorsExercise
 
 
 			}
+
+			//Area of a circle
+			Console.WriteLine("What is the radius of your circle?");
+			var radius = double.Parse(Console.ReadLine());
+			double circleArea = Math.PI * (radius * radius);
+			Console.WriteLine($"The area of your circle is {circleArea}");
+
 		}
 	}
 }
